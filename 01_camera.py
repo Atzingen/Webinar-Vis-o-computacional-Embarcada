@@ -16,7 +16,7 @@ while True:
     gray2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
     frame = cv2.subtract(gray1, gray2)
 
-    cv2.imshow('frame', frame)     
+    cv2.imshow('imagem', frame)     
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
