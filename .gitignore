@@ -1,6 +1,6 @@
 # ignore models folder
 models/
-
+runs/
 datasets/
 
 # Byte-compiled / optimized / DLL files

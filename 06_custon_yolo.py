@@ -6,14 +6,10 @@ from collections import defaultdict
 
 cv2.namedWindow('imagem', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('imagem', (1280, 720))
-vid = cv2.VideoCapture(0)
-
 cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
 # modelos: "yolov8n.pt", "yolov5s.pt", "yolov5m.pt", "yolov5l.pt", "yolov5x.pt"
-model = YOLO("models/yolo_batata.pt")
+model = YOLO("models/yolov9c-potato-best.pt")
 track_history = defaultdict(lambda: [])
 
 while True:
